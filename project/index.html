@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Web</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <div id="check">
+        <nav class="navbar">
+            <div class="logo">Study Web</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#">
+                     Courses
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#frontend">
+                              Frontend Development 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#backend">
+                                Backend Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#course">
+                                All Courses
+                            </a>
+                        </li>
+                    </ul>
+               </li>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactus">
+                        Contact
+                    </a>
+                </li>
+           </ul> 
+        </nav>
+        <section id="home">
+            <div class="home-photo">
+                <div class="home-main">
+                    <p>📚 <b>WELCOME TO EDUKA!</b></p>
+                    <h1">Start Your Beautiful <br> And <span class="highlight">Bright</span> Future</h1>
+                    <p >There are many variations of passages orem ipsum available but the majority have suffered alteration in some predefined chunks from injected humour.</p>
+                    <div class="buttons">
+                        <a href="#contactus" class="btn btn-orange " style="margin-right: 10px; margin-bottom: 20px;">
+                         ABOUT MORE →
+                        </a>
+                        <a href="#course" class="btn btn-white">
+                            LEARN MORE →
+                        </a>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <div >
+            <ul class="s2">
+               <li>
+                    <img src="./img/s1.png" alt="error">
+                    <h1>Scholarship Facility</h1>
+                    <p>It is a long established fact that a reader will be distracted.</p>
+                </li>
+                <li>
+                    <img src="./img/s2.png" alt="error">
+                    <h1>Skilled Lecturers</h1>
+                    <p>It is a long established fact that a reader will be distracted.</p>
+                </li>
+                <li>
+                    <img src="./img/s3.png" alt="error">
+                    <h1>Book Library Facility</h1>
+                    <p>It is a long established fact that a reader will be distracted.</p>
+                </li>
+                <li>
+                    <img src="./img/s4.png" alt="error">
+                    <h1>Affordable Price</h1>
+                    <p>It is a long established fact that a reader will be distracted.</p>
+                </li>
+            </ul>
+        </div>
+
+        <section id="course">
+            <div class="c1">
+                <h3>Our Courses</h3>
+                <h2>Let's Check Our <span>Courses</span></h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+
+            <section id="frontend">
+                <h1 style="text-align: center;">Frontend Development</h1>
+                <div class="cfullbox">
+                   <div class="csubbox">
+                        <div class="cphoto">
+                           <img src="https://www.cnet.com/a/img/resize/6019f01d3b92576edc0a52712a047db8cb78331d/hub/2014/10/27/40194e6e-2544-419e-a340-f7c17b2e83c5/html5-wow-image-w3c.jpg?auto=webp&fit=crop&height=900&width=1200" alt="Html">
+                        </div>
+                        <div class="cmatter">
+                
+                            <h3>HTML</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                              <p class="lessons">📖 10 Lessons</p>
+                              <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description"> Learn the fundamentals of HTML, structure web pages, and build responsive websites.</p>
+                            <div class="csubmatter">
+                                <span>👥 90 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹500</span>
+                            </div>
+                            <button onclick="enroll()">
+                          Enroll
+                            </button>
+                        </div> 
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://delta-dev-software.fr/wp-content/uploads/2024/05/CSS-Logo.png" alt="Basic CSS" ">
+                        </div>
+                        <div class="cmatter">
+                            <h3>Basic CSS</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Learn the basics of CSS, including styling, layouts, and responsive design.</p>
+                            <div class="csubmatter">
+                                <span>👥 46 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹800</span>
+                            </div>
+                            <button onclick="enroll()">
+                            Enroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/intro-to-css.jpeg?v=1580838171" alt="Advanced CSS">
+                        </div>
+                        <div class="cmatter">
+                            <h3>Advanced CSS</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Master advanced CSS techniques like flexbox, grid, animations, and preprocessors.</p>
+                            <div class="csubmatter">
+                                <span>👥 50 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹1000</span>
+                            </div>
+                            <button onclick="enroll()">
+                            Enroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://d2jdgazzki9vjm.cloudfront.net/images/javascript/javascript_logo.png" alt="Js">
+                        </div>
+                        <div class="cmatter">
+                            <h3>Java Script</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description"> Learn JavaScript fundamentals, DOM manipulation, and event handling.</p>
+                            <div class="csubmatter">
+                                <span>👥 85 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹1500</span>
+                            </div>
+                            <button onclick="enroll()">
+                            Enroll
+                            </button>
+                       </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://miro.medium.com/v2/resize:fit:522/0*Hdm7hBTZ-hKlbtlV.png" alt="React JS">             
+                        </div>
+                        <div class="cmatter">
+                            <h3>React Js</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Build dynamic and fast web apps using React, hooks, and state management.</p>
+                            <div class="csubmatter">
+                                <span>👥 30 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹2000</span>
+                            </div>
+                            <button onclick="enroll()">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+             <section id="backend">
+                <h1 style="text-align: center;"> Backend Development</h1>
+                <div class="cfullbox">
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://www.promosystech.com/temp/assets/img/train/php.jpg" alt="Php">
+                        </div>
+                        <div class="cmatter">
+                            <h3>PHP</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">PHP fundamentals, database integration with MySQL, and server-side scripting.</p>
+                            <div class="csubmatter">
+                                <span>👥 35 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹2200</span>
+                            </div>
+                            <button onclick="enroll()">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://tavtechsolutions.com/wp-content/uploads/2024/11/BRING-ExpressJS-Developers.webp" alt="Express Js">             
+                        </div>
+                        <div class="cmatter">
+                            <h3>Express Js</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Learn to create RESTful APIs and backend services using Express.js.</p>
+                            <div class="csubmatter">
+                                <span>👥 49 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹2300</span>
+                            </div>
+                            <button onclick="enroll()">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIot1ZZPNqzpYPM35vNP6fR7e7TGt1i3xvSQ&s" alt="Node Js">
+                        </div>
+                        <div class="cmatter">
+                            <h3>Node Js</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Master server-side JavaScript with Node.js, including asynchronous programming.</p>
+                            <div class="csubmatter">
+                                <span>👥 59 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹2500</span>
+                            </div>
+                            <button onclick="enroll()">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://tms-outsource.com/blog/wp-content/uploads/2023/05/flask-alternatives.jpg" alt="Flask">
+                        </div>
+                        <div class="cmatter">
+                            <h3>Flask</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Build lightweight and powerful web applications using Python’s Flask framework.</p>
+                            <div class="csubmatter">
+                                <span>👥 75 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹3000</span>
+                            </div>
+                            <button onclick="enroll()">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="csubbox">
+                        <div class="cphoto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP6DZZRMp2kvePYTzmYyG4IfTjQUTdOzsX6w&s" alt="Django">
+                        </div>
+                        <div class="cmatter">
+                            <h3>Django</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p class="lessons">📖 10 Lessons</p>
+                                <p class="rating">⭐ 4.0</p>
+                            </div>
+                            <p class="description">Learn Django framework, build dynamic web applications, and integrate databases with Python.</p>
+                            <div class="csubmatter">
+                                <span>👥 40 Seats</span>
+                                <span>⏳ 4 Months</span>
+                                <span class="price">₹3500</span>
+                            </div>
+                            <button onclick="enroll()">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </section>
+        <section id="about">
+            <div class="abimg"> 
+                <div>
+                    <img src="./img/s5.png" alt="error" style="border-radius: 80px; border-bottom-right-radius: 10px;">   
+                    <img src="./img/s8.png" alt="error" style="border-radius: 90px; border-bottom-left-radius: 10px;">
+                </div>
+                <div>
+                    <img src="./img/s7.png" alt="error" style="border-radius: 50%;">
+                    <img src="./img/s6.png" alt="error" style="border-radius: 90px; border-top-left-radius: 10px;">
+                </div>
+            </div>
+            <div class="abmatter">
+                    <h1>Our Edukation System <br> <span>Inspires</span> You More.</h1>
+                    <p>There are many variations of passages available but the majority have suffered alteration in some form by injected humour.</p>
+                    <div class="absubmatter">
+                        <div>
+                            <img src="./img/s9.png" alt="error">
+                        </div>
+                        <div class="absubmatter-text">
+                            <h3>Edukation Services</h3>
+                            <p>It is a long established fact that the reader will use content.</p>
+                        </div>
+                    </div>
+                    <div class="absubmatter">
+                        <div>
+                            <img src="./img/s10.png" alt="Hubs">
+                        </div>
+                        <div class="absubmatter-text">
+                            <h3>International Hubs</h3>
+                            <p>It is a long established fact that the reader will use content.</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">DISCOVER MORE →</a>
+                        <div class="call-now"><span>Call Now</span> <br> +91 9553697077</div>
+                    </div>
+                
+            </div>
+        </section>
+
+        <section id="contactus">
+            <h1 style="text-align: center; font-weight: 1000px;">Contact Us</h1>
+            <div id="contact">
+                <div class="contact-section">
+                    <div class="contact-box">
+                        <img src="./img/s12.png" alt="Office Address">
+                        <h3>Office Address</h3>
+                        <p>25/B vizag, Ap, India</p>
+                    </div>
+                    <div class="contact-box">
+                        <img src="./img/s13.png" alt="Call Us">
+                        <h3>Call Us</h3>
+                        <p>+91 9553697077</p>
+                    </div>
+                    <div class="contact-box">
+                        <img src="./img/s14.png" alt="Email Us">
+                        <h3>Email Us</h3>
+                        <p>prashanthreddytadi@gmail.com</p>
+                    </div>
+                    <div class="contact-box">
+                        <img src="./img/s15.png" alt="Open Time">
+                        <h3>Open Time</h3>
+                        <p>Mon - Sat (10.00 AM - 05.30 PM)</p>
+                    </div>
+                </div> 
+                
+                <div class="contact-container">
+                    <div class="contact-image">
+                        <img src="./img/s11.png" alt="Students">
+                    </div>
+                    <div class="contact-form">
+                        <h2>Get In Touch</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <input type="text" placeholder="Your Subject" style="width: 90%; height: 40px; border: #222 ,solid; margin: 5px;">
+                        <textarea placeholder="Write Your Message"></textarea>
+                        <button class="send-btn" >
+                            Send Msg
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

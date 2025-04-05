@@ -1,0 +1,591 @@
+html{
+    scroll-behavior: smooth;
+} 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+   align-items: center;
+    padding-top: 70px; 
+    background-color: #f8f9fa;
+    margin-bottom: 70px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+height: 50px;
+    width: 100%;
+    display: flex;
+    
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+ }
+.logo {
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    font-weight: bold;
+    color: #007b5e;
+}
+.menu {
+    position:absolute;
+    right: 5%;
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    white-space: nowrap;
+    border: 2px solid transparent; 
+    z-index: 102;
+}
+.menu li:hover{
+    border: 2px solid red;
+ }
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.submenu li {
+    padding: 8px 10px;
+ }
+.menu li:hover .submenu {
+    display: block;
+}
+@media(max-width:700px) {
+    .navbar{
+        
+        padding: 0;
+       
+    }
+    .menu{
+        position: absolute;
+        right: 2%;
+    }
+.menu li{
+    margin-left: 0%;
+    margin-right:0px ;
+}
+  
+    
+}
+.home-photo {
+    background-image: url('https://media.istockphoto.com/id/1358014313/photo/group-of-elementary-students-having-computer-class-with-their-teacher-in-the-classroom.jpg?s=612x612&w=0&k=20&c=3xsykmHXFa9ejL_sP2Xxiow7zdtmKvg15UxXFfgR98Q=');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.highlight {
+    color:white;
+    font-weight: 900;
+}
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.buttons {
+    margin-top: 20px;
+ }
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-orange {
+    background: orange;
+    color: white;
+}
+.btn-orange:hover {
+    background: darkorange;
+}
+.btn-white {
+    background: white;
+    color: black;
+ }
+.btn-white:hover {
+    background: lightgray;
+}
+.home-main{
+    position: relative;
+    z-index: 3; 
+}
+.home-photo::before {
+    content:" " ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0.5);
+    z-index: 1; 
+}
+  
+ .s2{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+ .s2 li{
+    width: 100%;
+    max-width: 300px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-bottom-left-radius: 0%;
+}
+ 
+  @media(max-width:950px){
+ .home-photo{
+    width: 100%;
+}
+ .s2 li{
+    max-width: 80%;
+}
+}
+ .s2 li img{
+    border-radius: 50%;
+}
+ .s2 li img:hover{
+    animation: rotateText 2s linear 2; 
+}
+  @keyframes rotateText {
+    from {
+    transform: rotateY(0deg);
+}
+    to {
+    transform: rotateY(360deg);
+}
+}
+  #about {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 0%;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .abimg {
+    width: 45%;
+    display: flex;
+    gap: 10px;
+}
+  
+ .abimg div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+ .abimg img {
+    width: 100%;
+    object-fit: cover;
+}
+ .abmatter {
+    margin-top: 10px;
+    width: 50%;
+}
+  
+ .absubmatter {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+ .absubmatter img {
+    border-radius: 50%;
+}
+  
+ .absubmatter-text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+  
+ .absubmatter-text p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 0 0;
+}
+  
+
+ .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+ .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+ .btn:hover {
+    background: darkorange;
+}
+  
+ .call-now {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007b5e;
+}
+  
+ .call-now span {
+    color: orange;
+}
+
+    @media (max-width: 768px) {
+    #about {
+    flex-direction: column;
+    text-align: center;
+}
+  
+ .abimg,
+ .abmatter {
+    width: 100%;
+}
+  
+ .abimg {
+    justify-content: center;
+}
+  
+ .absubmatter {
+    justify-content: center;
+}
+  
+ .buttons {
+    flex-direction: column;
+}
+  
+ .call-now {
+    margin-left: 0;
+    margin-top: 15px;
+}
+}
+ .contact-container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+ .contact-image {
+    width: 50%;
+    background: #007b5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+ .contact-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+  
+ .contact-form {
+    
+    width: 80%;
+    padding: 10px;
+}
+  
+ .contact-form h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+ .contact-form p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+  
+ .input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+  
+ .input-group input, 
+ .contact-form textarea {
+    width: 89%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    border: #222 ,solid;
+    transition: 0.3s;
+}
+  
+ .contact-form textarea {
+    height: 100px;
+    
+}
+  
+ .contact-form input:focus, 
+ .contact-form textarea:focus {
+    border-color: #007b5e;
+}
+    #contact{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+}
+ .send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff9f00;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+ .send-btn:hover {
+    background: #e88f00;
+}
+  
+    @media (max-width: 768px) {
+ .contact-container {
+    flex-direction: column;
+}
+  
+ .contact-image {
+    width: 100%;
+}
+  
+ .contact-form {
+    width: 100%;
+    padding: 20px;
+}
+}
+ .contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+  
+ .contact-box {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+  
+ .contact-box::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 10px;
+    background-color: #065f4f;
+    border-radius: 5px;
+}
+  
+ .contact-box img {
+    width: 100px;
+    height: 100px;
+}
+  
+ .contact-box h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #222;
+}
+  
+ .contact-box p {
+    font-size: 14px;
+    color: #555;
+}
+  
+ @media (max-width: 768px) {
+ .contact-section {
+    flex-direction: column;
+    align-items: center;
+}
+}
+ .input-group input{
+    width: 42%;
+    
+}
+a{
+    text-decoration: none;
+}
+    
+ .cfullbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+  
+ .csubbox {
+    background: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    transition: 0.3s ease-in-out;
+}
+  
+ .csubbox:hover {
+    transform: translateY(-5px);
+}
+  
+ .cphoto {
+    position: relative;
+}
+  
+ .cphoto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+  
+  
+ .cmatter {
+    padding: 20px;
+    text-align: left;
+}
+  
+ .lessons, .rating {
+    font-size: 14px;
+    color: #ff9f1c;
+    margin-bottom: 5px;
+}
+  
+  h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #222;
+}
+  
+ .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+  
+ .csubmatter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    align-items: center;
+}
+ .price {
+    background: #ff9f1c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+ .c1 {
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+    margin: 50px auto;
+}
+ .c1 h3 {
+    color: #f39c12;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ .c1 h3::before {
+    content: "\1F4DA "; 
+}
+ .c1 h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+ .c1 h2 span {
+    color: #f39c12;
+}
+ .c1 p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+ .cmatter button{
+    width: 70%; 
+    margin-left: 35px; 
+    background-color: wheat;
+    height: 50px; 
+    border: #222 ,solid ,2px; 
+    border-radius: 20px; 
+    font-size: x-large;
+}
+ .cmatter button:hover {
+    color: white;
+    background: radial-gradient( #ff3300 0%, #ff6600 50%, #ff9900 100%);
+}
+  
